@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "rus");
+
+	int NumberOfFinger = 0;
+
+	cout << "Введите номер: ";
+	cin >> NumberOfFinger;
+
+	switch (NumberOfFinger)
+	{
+	case 1: cout << "\nРезультат:  Большой палец \n";
+		break;
+	case 2: cout << "\nРезультат: Указательный палец\n";
+		break;
+	case 3: cout << "\nРезультат: Средний палец\n";
+		break;
+	case 4: cout << "\nРезультат: Безымянный палец\n";
+		break;
+	case 5: cout << "\nРезультат: Мизинец\n";
+		break;
+	default: cout << "\nНет такого пальца ёмае!\n\n";
+	}
+	return 0;
+}

@@ -1,0 +1,40 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "rus");
+
+	int dayNumber; // будет хранить выбор пользователя
+
+	cout << "Введите день недели (1, 2, 3...): ";
+	cin >> dayNumber; // ввод значения
+
+	switch (dayNumber)
+	{
+	case 1:
+		cout << "Понедельник: \n9:00 Учеба \n19:00 Волейбол \n";
+		break;
+	case 2:
+		cout << "Вторник: \n9:00 Учеба \n17:00 Выгулять собаку \n";
+		break;
+	case 3:
+		cout << "Среда: \n9:00 Учеба \n19:00 Волейбол \n";
+		break;
+	case 4:
+		cout << "Четверг: \n9:00 Учеба \n18:00 Ужин в ресторане \n";
+		break;
+	case 5:
+		cout << "Пятница: \n9:00 Учеба \n17:00 Волейбол \n";
+		break;
+	case 6:
+		cout << "Суббота: \nВолейбол \n";
+		break;
+	case 7:
+		cout << "Воскресенье: \nОтдых\n";
+		break;
+	default:
+		cout << "Нет такого дня недели ))" << endl;
+	}
+	return 0;
+}
